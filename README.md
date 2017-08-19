@@ -4,7 +4,7 @@
 
 ### About the project
 
-**KDocu** aims to make Documentum DFC more Kotlin friendly
+**KDocu** aims to make Documentum DFC more Kotlin friendly.
 
 A small example :
 ```Kotlin
@@ -46,3 +46,12 @@ Available functions for executing queries are :
 - `execReadQuery(session, query)` : Execute a read-only select DQL query. The query must not make any change during processing
 - `execCachedQuery(session, query)` : Execute a read-only cached DQL query
 - `execApplyQuery(session, query)` : Execute a DQL Query that invoke procedure. For example GET_PATH
+
+### Building the project
+
+To build the Gradle project, you need the DFC dependency that isn't available in Maven public repositories.
+You can download Documentum REST Services SDK on the EMC support website. This package contains scripts to deploy Documentum libraries in your local Maven repository.
+
+### License
+
+KDocu is licensed under the Apache License 2.0.
